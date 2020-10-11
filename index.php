@@ -26,7 +26,7 @@
                             Projects
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">      
-                            <a class="dropdown-item" href="covid_tracker.html">COVID Tracker(API)</a>
+                            <a class="dropdown-item" href="covid_tracker.php">COVID Tracker(API)</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Sample2</a>
                             <div class="dropdown-divider"></div>
