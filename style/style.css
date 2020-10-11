@@ -1,0 +1,11 @@
+body
+{
+   background-image: url(/assets/wallpaper.jpg); 
+   
+   background-size: cover;
+}
+.col{
+   background-color: white;
+   border-style: groove;
+   border-width: 1px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <p id="display"></p>    
+</body>
+<script>
+  let display = document.getElementById('display');
+  let test =  fetch("https://numbersapi.p.rapidapi.com/6/21/date?fragment=true&json=true", {
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "numbersapi.p.rapidapi.com",
+		"x-rapidapi-key": "bdcc119acfmsh45b846625fc4b2cp1e209fjsn148091680744"
+	}
+})
+.then(response => response.json())
+.then(data => {
+  console.log(data)
+  display.innerHTML = `text: ${data.text}<br>
+                        year: ${data.year}<br>
+                        number: ${data.number}<br>
+                        type: ${data.type}
+
+                       `
+})
+</script>
+</html>
